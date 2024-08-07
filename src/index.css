@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +10,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body, html {
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 200px 1fr 100px;
+  height: 100vh;
+  width: 100vw;
+  text-align: left;
+  overflow-y: hidden;
+}
+
+main {
+  overflow-y: auto;
+}
+
+.header {
+  background: #f8f8f8;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer {
+  background: #f8f8f8;
+  padding: 1rem;
 }
